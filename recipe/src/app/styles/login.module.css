@@ -1,0 +1,21 @@
+.container{
+    border-radius: 10px;
+    height: 200px;
+    width: 400px;
+    box-shadow: 2px 2px 2px grey;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+}
+.loginButton{
+    width: fit-content;
+}
+.loginButtonPair{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
