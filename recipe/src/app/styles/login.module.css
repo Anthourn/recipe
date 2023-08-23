@@ -1,21 +1,51 @@
 .container{
-    border-radius: 10px;
-    height: 200px;
-    width: 400px;
-    box-shadow: 2px 2px 2px grey;
+    height: 100vh;
+    width: 37%;
     position: absolute;
-    top: 30%;
-    left: 30%;
+    background: white;
+    right: 0;
+    padding-top: 5%;
+    padding-left: 40px;
+    padding-right: 40px; ;
+}
+.pageBackground{
+    background-image: url("/oranges.jpeg");
+    /* position: absolute; */
+    z-index: -5;
+    background-position: 20%;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.formContainer{
+margin-top: 80px;
 }
 .formContainer > form{
     display: flex;
     flex-direction: column;
 }
 .loginButton{
-    width: fit-content;
+    width: 100%;
+    margin-top: 30px;
 }
 .loginButtonPair{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.header{
+    text-align: center;
+    font-weight: 700;
+}
+.photoCredit{
+    color: darkgray;
+    position: absolute;
+    bottom: 3%;
+}
+.photoCredit a {
+    color: darkgray;
+
+}
+.userField{
+    padding-left: 7px;
 }
