@@ -2,7 +2,8 @@
     height: 100vh;
     width: 37%;
     position: absolute;
-    background: white;
+    background-color: #F5F2EE;
+    color: #664328;
     right: 0;
     padding-top: 5%;
     padding-left: 40px;
@@ -27,6 +28,8 @@ margin-top: 80px;
 .loginButton{
     width: 100%;
     margin-top: 30px;
+    color:floralwhite ;
+    background-color: darkgreen;
 }
 .loginButtonPair{
     display: flex;

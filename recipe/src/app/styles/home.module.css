@@ -1,9 +1,25 @@
 .container{
     background-color: #F5F2EE;
     color: #664328;
+    padding: 100px;
+    height: 100vh;
 }
 .topHeading{
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    /* padding: 100px; */
+}
+
+@media(max-width: 720px){
+    .topHeading{
+        display: flex;
+        flex-direction: column;
+ 
+    }
+    .container{
+        background-color: #F5F2EE;
+        color: #664328;
+        padding: 50px;
+        height: 100%;
+    }
 }

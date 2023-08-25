@@ -65,7 +65,7 @@ const Login = () => {
                 variant="contained"
                 size="medium"
               >
-                log in
+                Sign in
               </Button>
             </form>
 

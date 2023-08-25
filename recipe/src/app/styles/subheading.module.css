@@ -1,0 +1,29 @@
+.image{
+    border-radius: 20px;
+    display: inline-block;
+}
+.imageSecond{
+    border-radius: 20px;
+    display: inline-block;
+}
+.subSpan{
+    display: inline-block;
+}
+
+.subFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+@media(max-width: 720px){
+    .image{
+    width: 200px;
+    height: 200px;
+    }
+    .imageSecond{
+        display: none;
+        }
+}

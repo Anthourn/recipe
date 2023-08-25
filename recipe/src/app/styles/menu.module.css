@@ -1,14 +1,14 @@
 .menuContainer{
     width: 400px;
-    padding: 25px;
+    padding-right: 25px;
 }
 .menuIcon{
-    color: black;
+    color: #664328;
     display: block;
     text-align: center;
 }
 .menuLink{
-    color: black;
+    color: #664328;
     text-decoration: none;
 }
 .menuItemFlex{
@@ -19,4 +19,15 @@
 }
 .menuList{
     list-style: none;
+    padding: 0;
+}
+@media(max-width: 720px){
+    .menuItemFlex{
+        
+        justify-content: left;
+    }
+    .menuContainer{
+        width: 70vw;
+        padding-right: 0;
+    }
 }
