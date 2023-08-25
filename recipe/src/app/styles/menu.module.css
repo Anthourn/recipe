@@ -1,0 +1,22 @@
+.menuContainer{
+    width: 400px;
+    padding: 25px;
+}
+.menuIcon{
+    color: black;
+    display: block;
+    text-align: center;
+}
+.menuLink{
+    color: black;
+    text-decoration: none;
+}
+.menuItemFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuList{
+    list-style: none;
+}

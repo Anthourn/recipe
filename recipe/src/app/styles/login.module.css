@@ -32,6 +32,8 @@ margin-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 30px;
+    font-weight: 500;
 }
 .header{
     text-align: center;
@@ -48,4 +50,28 @@ margin-top: 80px;
 }
 .userField{
     padding-left: 7px;
+}
+
+@media (max-width:1080px) {
+    .container{
+        width: 40%;
+    }
+}
+@media (max-width:1000px) {
+    .container{
+        width: 45%;
+    }
+}
+@media (max-width:975px) {
+    .container{
+        width: 50%;
+    }
+}
+@media (max-width:700px) {
+    .container{
+        width: 100%;
+    }
+    .photoCredit{
+        display: none;
+    }
 }

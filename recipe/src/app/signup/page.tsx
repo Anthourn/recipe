@@ -7,13 +7,12 @@ import {
   Checkbox,
   FormGroup,
   FormControlLabel,
-  Link,
 } from "@mui/material";
 import { InputAdornment, Input } from "@mui/material";
 import { AccountCircle, Visibility, VisibilityOff } from "@mui/icons-material";
 import { useState } from "react";
 
-const Login = () => {
+const SignUp = () => {
   const [passwordisVisible, setPasswordVisibility] = useState(false);
   function toggleVisibility() {
     setPasswordVisibility(!passwordisVisible);
@@ -23,7 +22,7 @@ const Login = () => {
       <div className={styles.pageBackground}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <h1>Sign in</h1>
+            <h1>Sign Up</h1>
           </div>
           <div className={styles.formContainer}>
             <form>
@@ -59,21 +58,15 @@ const Login = () => {
                   ),
                 }}
               ></TextField>
-              <FormControlLabel control={<Checkbox />} label="Remember me" />
               <Button
                 className={styles.loginButton}
                 variant="contained"
                 size="medium"
               >
-                log in
+                Create Account
               </Button>
             </form>
 
-            <div className={styles.loginButtonPair}>
-              <Link href="/forgotpassword"> Forgot password?</Link>
-
-              <Link href="/signup"> Sign up</Link>
-            </div>
             <p className={styles.photoCredit}>
               Photo by{" "}
               <a href="https://unsplash.com/@moniqa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -90,4 +83,4 @@ const Login = () => {
     </>
   );
 };
-export default Login;
+export default SignUp;
