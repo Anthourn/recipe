@@ -2,11 +2,10 @@ WIP Website for Recipe Hosting, and Ingredient Management
 
 This application uses Next.js, Prisma, and Next-auth.
 
-## Getting Started
+# Getting Started
 
 First, clone this repository:
 
-```bash
 git clone https://github.com/your-username/your-project-name.git
 
 Then, navigate to the project directory and install the dependencies:
@@ -14,7 +13,8 @@ Then, navigate to the project directory and install the dependencies:
 cd your-project-name
 npm install
 
-Configuration
+## Configuration
+
 Environment Variables
 Create a new file named .env.local in the root directory of your project. Add the following environment variables to this file:
 
@@ -27,8 +27,9 @@ Run the following command to create the database schema:
 
 npx prisma migrate dev --name init
 
-Authentication Providers
-This starter template is configured to use GitHub and Google as authentication providers. To use these providers, you need to create OAuth applications on their respective developer portals.
+## Authentication Providers
+
+This app is configured to use GitHub and Google as authentication providers. To use these providers, you need to create OAuth applications on their respective developer portals.
 [WIP]
 GitHub
 Go to GitHub Developer Settings.
@@ -64,5 +65,3 @@ To learn more about Next.js, Prisma, and Next-auth, take a look at the following
 Next.js Documentation
 Prisma Documentation
 Next-auth Documentation
-
-```
