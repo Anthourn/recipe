@@ -3,8 +3,13 @@ import Menu from "../components/Home/Menu";
 import styles from "./styles/home.module.css";
 import SubHeading from "@/components/Home/SubHeading";
 import { prisma } from "@/lib/prisma";
+import type { User } from "@prisma/client";
+import { getServerSession } from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]/route";
+
 export default async function Home() {
-  const user = await prisma.user.findFirst({
+  const session = await getServerSession(authOptions);
+  const user: User = await prisma.user.findFirst({
     where: {
       email: "demo@demo.com",
     },
@@ -17,6 +22,7 @@ export default async function Home() {
         <Header user={user}></Header>
       </div>
       <SubHeading></SubHeading>
+      <pre>{JSON.stringify(session)}</pre>
     </main>
   );
   console.log("user", user);
