@@ -30,7 +30,9 @@ npx prisma migrate dev --name init
 ## Authentication Providers
 
 This app is configured to use GitHub and Google as authentication providers. To use these providers, you need to create OAuth applications on their respective developer portals.
+
 [WIP]
+
 GitHub
 Go to GitHub Developer Settings.
 Click on New OAuth App.
@@ -40,6 +42,7 @@ Homepage URL: http://localhost:3000.
 Authorization callback URL: http://localhost:3000/api/auth/callback/github.
 Click on Register application.
 Copy the Client ID and Client Secret values.
+
 Google
 Go to Google Cloud Console.
 Create a new project or select an existing one.
